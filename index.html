@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- creation of Tic-Tac_Toe game grid using HTML, JavaScript and CSS
+When a cell in the grid is clicked, an X or O appears in the cell,
+depends of whose turn it is. A winner will be shown on the screen,
+ or a Draw - nobody wins. A Reset Board button would clear the grid and reset the game.
+When a player has won, a Bootstrap alert should appear across the screen.
+After announcing the winner, we cannot press any empty or filled cell, 
+the game stops- It will announce:Game is over-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking to bootstrap css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- linking to css -->
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js"></script>
+</head>
+
+<body>
+    <h2>Tic Tac Toe Game</h2>
+
+    <div>
+
+        <!-- player has a turn to play -->
+        <p id="turn">X's turn</p>
+
+        <!-- building the grid, we can see how the board looks on the browser.
+    when a user click on a blank cell an X or an O will show on the cell -->
+        <div id="grid">
+            <div id="cell-00"></div>
+            <div id="cell-01"></div>
+            <div id="cell-02"></div>
+            <div id="cell-10"></div>
+            <div id="cell-11"></div>
+            <div id="cell-12"></div>
+            <div id="cell-20"></div>
+            <div id="cell-21"></div>
+            <div id="cell-22"></div>
+        </div>
+    </div>
+
+    <h2 id="winner"></h2>
+
+    <!-- the orignial bootstrap message when there is a winner -->
+
+    <div id="message" class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah !!!</p>
+        <hr>
+        <p class="mb-0">You won</p>
+    </div>
+
+
+    <!-- Reset board button to clear the information -->
+    <button id="reset">RESET BOARD</button>
+
+
+
+
+
+    <script src=”node_modules/jquery/dist/jquery.js”></script>
+    <script src=”node_modules/bootstrap/dist/js/bootstrap.bundle.js”></script>
+
+
+</body>
+
+</html>

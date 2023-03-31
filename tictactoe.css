@@ -1,0 +1,46 @@
+/*styling the grid so we will have 3 squares
+ horizontal and verticals*/
+
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    /* X and O will be placed in the ceneter of each cell*/
+    grid: center;
+
+}
+
+/* styling the cells in the grid so we will have
+each individual square*/
+
+#grid div {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+/*here I would like to make sure that bootstrap message 
+is not showing when we start a new game*/
+
+#message {
+    display: none;
+}
+
+/*here we increase the size of X and O, when we play the game*/
+
+#cell-00,
+#cell-01,
+#cell-02,
+#cell-10,
+#cell-11,
+#cell-12,
+#cell-20,
+#cell-21,
+#cell-22 {
+    font-size: 50px;
+
+
+}
